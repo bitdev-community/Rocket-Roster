@@ -20,6 +20,18 @@
             }
         }
     },
+    "modules/get-time": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "next-demo/modules/get-time",
+        "config": {
+            "teambit.node/node@0.1.6": {},
+            "teambit.envs/envs": {
+                "env": "teambit.node/node"
+            }
+        }
+    },
     "ui/button": {
         "scope": "",
         "version": "",
@@ -35,6 +47,18 @@
                     }
                 }
             },
+            "ignacioaldama.next-demo/envs/next-components-env": {},
+            "teambit.envs/envs": {
+                "env": "ignacioaldama.next-demo/envs/next-components-env"
+            }
+        }
+    },
+    "ui/paragraph": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "next-demo/ui/paragraph",
+        "config": {
             "ignacioaldama.next-demo/envs/next-components-env": {},
             "teambit.envs/envs": {
                 "env": "ignacioaldama.next-demo/envs/next-components-env"

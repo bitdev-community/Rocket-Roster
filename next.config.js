@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  transpilePackages: ['@ignacioaldama/next-demo.ui.button'],
+  transpilePackages: ['@ignacioaldama'],
+  experimental: {
+    serverActions: true,
+  },
 };
 
 module.exports = nextConfig;
