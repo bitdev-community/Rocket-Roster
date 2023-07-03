@@ -32,6 +32,18 @@
             }
         }
     },
+    "modules/launchs-client": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "next-demo/modules/launchs-client",
+        "config": {
+            "teambit.node/node@0.1.6": {},
+            "teambit.envs/envs": {
+                "env": "teambit.node/node"
+            }
+        }
+    },
     "ui/button": {
         "scope": "",
         "version": "",
@@ -47,6 +59,30 @@
                     }
                 }
             },
+            "ignacioaldama.next-demo/envs/next-components-env": {},
+            "teambit.envs/envs": {
+                "env": "ignacioaldama.next-demo/envs/next-components-env"
+            }
+        }
+    },
+    "ui/card": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "next-demo/ui/card",
+        "config": {
+            "ignacioaldama.next-demo/envs/next-components-env": {},
+            "teambit.envs/envs": {
+                "env": "ignacioaldama.next-demo/envs/next-components-env"
+            }
+        }
+    },
+    "ui/countdown": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "next-demo/ui/countdown",
+        "config": {
             "ignacioaldama.next-demo/envs/next-components-env": {},
             "teambit.envs/envs": {
                 "env": "ignacioaldama.next-demo/envs/next-components-env"

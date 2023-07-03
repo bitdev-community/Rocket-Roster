@@ -18,6 +18,7 @@ import { Tester } from '@teambit/tester';
 import { Preview } from '@teambit/preview';
 import hostDependencies from './preview/host-dependencies';
 import { PackageGenerator } from '@teambit/pkg';
+import { tailwindTransformer } from '@learnbit/styling.transformers.tailwind';
 // import { webpackTransformer } from './config/webpack.config';
 
 export class NextComponentsEnv extends ReactEnv {
@@ -81,7 +82,11 @@ export class NextComponentsEnv extends ReactEnv {
     return ReactPreview.from({
       mounter: require.resolve('./preview/mounter'),
       hostDependencies,
-      // transformers: [webpackTransformer],
+      transformers: [
+        tailwindTransformer({
+          cdn: true,
+        }),
+      ],
     });
   }
 
