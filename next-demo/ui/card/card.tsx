@@ -2,7 +2,6 @@ import React from 'react';
 import { SingleLaunch } from '@learnbit-react/rocket-roster.modules.launchs-client';
 import { Countdown } from '@learnbit-react/rocket-roster.ui.countdown';
 import Image from 'next/image';
-import Link from 'next/link';
 
 export type CardProps = {
   launch: SingleLaunch;
@@ -45,12 +44,6 @@ export function Card({ launch, isPreview }: CardProps) {
           })}
         </p>
       </div>
-      <Link
-        href={`/launches/${launch.id}`}
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4"
-      >
-        View Launch
-      </Link>
     </article>
   );
 }
