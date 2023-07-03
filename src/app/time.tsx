@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { Button } from '@ignacioaldama/next-demo.ui.button';
+import { Button } from '@learnbit-react/rocket-roster.ui.button';
 import { time } from './utils/getTime';
 
 export function TimeComp() {

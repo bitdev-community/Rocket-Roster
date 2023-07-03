@@ -1,5 +1,5 @@
 'use server';
-import { getTime } from '@ignacioaldama/next-demo.modules.get-time';
+import { getTime } from '@learnbit-react/rocket-roster.modules.get-time';
 
 export async function time(lang: string) {
   return getTime(lang);

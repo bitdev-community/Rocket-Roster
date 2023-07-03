@@ -1,6 +1,6 @@
 import React from 'react';
-import { SingleLaunch } from '@ignacioaldama/next-demo.modules.launchs-client';
-import { Countdown } from '@ignacioaldama/next-demo.ui.countdown';
+import { SingleLaunch } from '@learnbit-react/rocket-roster.modules.launchs-client';
+import { Countdown } from '@learnbit-react/rocket-roster.ui.countdown';
 import Image from 'next/image';
 import Link from 'next/link';
 

@@ -1,16 +1,10 @@
-const {
-  excludeFromSnapshot,
-} = require('@teambit/webpack.modules.exclude-from-snapshot');
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  transpilePackages: ['@ignacioaldama'],
+  transpilePackages: ['@learnbit-react'],
   webpack: (config) => {
-    /* config.snapshot.managedPaths = [
-      /^(?!.*[\\/]node_modules[\\/](?:@ignacioaldama)[\\/])(.+[\\/]node_modules[\\/])/,
-    ]; */
-
-    config = excludeFromSnapshot(config, ['@ignacioaldama']);
+    config.snapshot.managedPaths = [
+      /^(?!.*[\\/]node_modules[\\/](?:@learnbit-react)[\\/])(.+[\\/]node_modules[\\/])/,
+    ];
 
     return config;
   },

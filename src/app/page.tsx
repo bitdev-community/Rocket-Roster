@@ -1,6 +1,6 @@
 import { client } from './utils/client';
 import Link from 'next/link';
-import { Card } from '@ignacioaldama/next-demo.ui.card';
+import { Card } from '@learnbit-react/rocket-roster.ui.card';
 
 export default async function Home() {
   const allLaunches = await client.getUpcomingLaunches({});

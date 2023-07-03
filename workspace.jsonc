@@ -81,7 +81,7 @@
   },
   "teambit.generator/generator": {
     "envs": [
-      "ignacioaldama.next-demo/envs/next-components-env",
+      "learnbit-react.rocket-roster/envs/next-components-env",
       "teambit.node/node"
     ]
   }

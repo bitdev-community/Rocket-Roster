@@ -1,3 +1,3 @@
-import { LaunchsClient } from '@ignacioaldama/next-demo.modules.launchs-client';
+import { LaunchsClient } from '@learnbit-react/rocket-roster.modules.launchs-client';
 
 export const client = new LaunchsClient();

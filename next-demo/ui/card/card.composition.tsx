@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { LaunchsClient } from '@ignacioaldama/next-demo.modules.launchs-client';
+import { LaunchsClient } from '@learnbit-react/rocket-roster.modules.launchs-client';
 import { Card } from './card';
 
 const client = new LaunchsClient();

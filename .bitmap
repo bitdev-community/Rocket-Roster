@@ -9,97 +9,97 @@
  */
 
 {
-    "envs/next-components-env": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "next-demo/envs/next-components-env",
-        "config": {
-            "teambit.envs/envs": {
-                "env": "teambit.envs/env"
-            }
+  "envs/next-components-env": {
+    "scope": "",
+    "version": "",
+    "mainFile": "index.ts",
+    "rootDir": "next-demo/envs/next-components-env",
+    "config": {
+      "teambit.envs/envs": {
+        "env": "teambit.envs/env"
+      }
+    }
+  },
+  "modules/get-time": {
+    "scope": "",
+    "version": "",
+    "mainFile": "index.ts",
+    "rootDir": "next-demo/modules/get-time",
+    "config": {
+      "teambit.node/node@0.1.6": {},
+      "teambit.envs/envs": {
+        "env": "teambit.node/node"
+      }
+    }
+  },
+  "modules/launchs-client": {
+    "scope": "",
+    "version": "",
+    "mainFile": "index.ts",
+    "rootDir": "next-demo/modules/launchs-client",
+    "config": {
+      "teambit.node/node@0.1.6": {},
+      "teambit.envs/envs": {
+        "env": "teambit.node/node"
+      }
+    }
+  },
+  "ui/button": {
+    "scope": "",
+    "version": "",
+    "mainFile": "index.ts",
+    "rootDir": "next-demo/ui/button",
+    "config": {
+      "teambit.react/react": {},
+      "teambit.dependencies/dependency-resolver": {
+        "policy": {
+          "peerDependencies": {
+            "react": "18.2.0",
+            "react-dom": "18.2.0"
+          }
         }
-    },
-    "modules/get-time": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "next-demo/modules/get-time",
-        "config": {
-            "teambit.node/node@0.1.6": {},
-            "teambit.envs/envs": {
-                "env": "teambit.node/node"
-            }
-        }
-    },
-    "modules/launchs-client": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "next-demo/modules/launchs-client",
-        "config": {
-            "teambit.node/node@0.1.6": {},
-            "teambit.envs/envs": {
-                "env": "teambit.node/node"
-            }
-        }
-    },
-    "ui/button": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "next-demo/ui/button",
-        "config": {
-            "teambit.react/react": {},
-            "teambit.dependencies/dependency-resolver": {
-                "policy": {
-                    "peerDependencies": {
-                        "react": "18.2.0",
-                        "react-dom": "18.2.0"
-                    }
-                }
-            },
-            "ignacioaldama.next-demo/envs/next-components-env": {},
-            "teambit.envs/envs": {
-                "env": "ignacioaldama.next-demo/envs/next-components-env"
-            }
-        }
-    },
-    "ui/card": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "next-demo/ui/card",
-        "config": {
-            "ignacioaldama.next-demo/envs/next-components-env": {},
-            "teambit.envs/envs": {
-                "env": "ignacioaldama.next-demo/envs/next-components-env"
-            }
-        }
-    },
-    "ui/countdown": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "next-demo/ui/countdown",
-        "config": {
-            "ignacioaldama.next-demo/envs/next-components-env": {},
-            "teambit.envs/envs": {
-                "env": "ignacioaldama.next-demo/envs/next-components-env"
-            }
-        }
-    },
-    "ui/paragraph": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "next-demo/ui/paragraph",
-        "config": {
-            "ignacioaldama.next-demo/envs/next-components-env": {},
-            "teambit.envs/envs": {
-                "env": "ignacioaldama.next-demo/envs/next-components-env"
-            }
-        }
-    },
-    "$schema-version": "15.0.0"
+      },
+      "learnbit-react.rocket-roster/envs/next-components-env": {},
+      "teambit.envs/envs": {
+        "env": "learnbit-react.rocket-roster/envs/next-components-env"
+      }
+    }
+  },
+  "ui/card": {
+    "scope": "",
+    "version": "",
+    "mainFile": "index.ts",
+    "rootDir": "next-demo/ui/card",
+    "config": {
+      "learnbit-react.rocket-roster/envs/next-components-env": {},
+      "teambit.envs/envs": {
+        "env": "learnbit-react.rocket-roster/envs/next-components-env"
+      }
+    }
+  },
+  "ui/countdown": {
+    "scope": "",
+    "version": "",
+    "mainFile": "index.ts",
+    "rootDir": "next-demo/ui/countdown",
+    "config": {
+      "learnbit-react.rocket-roster/envs/next-components-env": {},
+      "teambit.envs/envs": {
+        "env": "learnbit-react.rocket-roster/envs/next-components-env"
+      }
+    }
+  },
+  "ui/paragraph": {
+    "scope": "",
+    "version": "",
+    "mainFile": "index.ts",
+    "rootDir": "next-demo/ui/paragraph",
+    "config": {
+      "learnbit-react.rocket-roster/envs/next-components-env": {},
+      "teambit.envs/envs": {
+        "env": "learnbit-react.rocket-roster/envs/next-components-env"
+      }
+    }
+  },
+  "$schema-version": "15.0.0"
 }
