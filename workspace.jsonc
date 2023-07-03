@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://bit.dev/docs/workspace/workspace-configuration
- **/ {
+ **/{
   "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
   /**
    * main configuration of the Bit workspace.
@@ -46,6 +46,7 @@
         "@teambit/defender.prettier-formatter": "^0.0.6",
         "@teambit/dependencies.modules.packages-excluder": "^0.0.70",
         "@teambit/preview.react-preview": "^0.0.36",
+        "@teambit/react.mounter": "^0.0.10",
         "@teambit/react.react-env": "^0.1.3",
         "@teambit/typescript.typescript-compiler": "^1.0.0",
         "@teambit/webpack.modules.exclude-from-snapshot": "^0.0.1",
