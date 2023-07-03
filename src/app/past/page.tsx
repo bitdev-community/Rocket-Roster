@@ -1,6 +1,7 @@
 import { client } from '../utils/client';
 import Link from 'next/link';
 import Image from 'next/image';
+import { Card } from '@learnbit-react/rocket-roster.ui.card';
 
 export default async function Home() {
   const allLaunches = await client.getPreviousLaunches({});
@@ -15,44 +16,7 @@ export default async function Home() {
           </h2>
           <div className="flex flex-row flex-wrap items-start justify-center mt-8">
             {allLaunches.results.map((launch) => (
-              <article
-                key={launch.id}
-                className="w-1/4 flex flex-col items-center justify-start m-4 p-4 border border-gray-300 rounded-md"
-              >
-                <header className="flex flex-col items-center justify-center h-full gap-2">
-                  <h5
-                    className="text-xl font-bold text-center"
-                    style={{ maxWidth: '300px' }}
-                  >
-                    {launch.name}
-                  </h5>
-                  <div
-                    className="w-full h-48 relative rounded-md overflow-hidden"
-                    style={{ maxWidth: '300px' }}
-                  >
-                    <Image src={launch.image} alt={launch.name} fill />
-                  </div>
-                </header>
-                <div className="flex flex-row items-center justify-center mt-10">
-                  <p>
-                    {new Date(launch.last_updated).toLocaleDateString(
-                      undefined,
-                      {
-                        weekday: 'long',
-                        year: 'numeric',
-                        month: 'long',
-                        day: 'numeric',
-                      }
-                    )}
-                  </p>
-                </div>
-                <Link
-                  href={`/launches/${launch.id}`}
-                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4"
-                >
-                  View Launch
-                </Link>
-              </article>
+              <Card key={launch.id} launch={launch} />
             ))}
           </div>
         </section>
