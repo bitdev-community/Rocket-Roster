@@ -16,9 +16,9 @@ import { JestTester, JestTask } from '@teambit/defender.jest-tester';
 import { PrettierFormatter } from '@teambit/defender.prettier-formatter';
 import { Tester } from '@teambit/tester';
 import { Preview } from '@teambit/preview';
-import hostDependencies from './preview/host-dependencies';
 import { PackageGenerator } from '@teambit/pkg';
 import { tailwindTransformer } from '@learnbit/styling.transformers.tailwind';
+import hostDependencies from './preview/host-dependencies';
 // import { webpackTransformer } from './config/webpack.config';
 
 export class NextComponentsEnv extends ReactEnv {

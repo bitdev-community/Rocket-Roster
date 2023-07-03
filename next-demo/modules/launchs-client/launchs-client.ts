@@ -1,42 +1,20 @@
+/* eslint-disable max-classes-per-file */
 import type { AllLaunchesRes } from './types/all-launches';
-import type { SingleLaunchRes } from './types/single-launch';
-import type { MultipleRocketsRes } from './types/all-rockets';
-import type { SingleRocketRes } from './types/single-rocket';
 
 class Url {
   constructor(path: string, base: string) {
-    let options = {
+    const options = {
       isRelativePath: path.startsWith('/'),
       baseEndsWithSlash: base.endsWith('/'),
     };
 
-    path = options.isRelativePath ? path : `/${path}`;
-    base = options.baseEndsWithSlash ? base.slice(0, -1) : base;
+    const urlpath = options.isRelativePath ? path : `/${path}`;
+    const urlbase = options.baseEndsWithSlash ? base.slice(0, -1) : base;
 
-    this.url = new URL(`${base}${path}`);
+    this.url = new URL(`${urlbase}${urlpath}`);
   }
 
   url: URL;
-
-  get href() {
-    return this.url.href;
-  }
-
-  get pathname() {
-    return this.url.pathname;
-  }
-
-  get search() {
-    return this.url.search;
-  }
-
-  get hash() {
-    return this.url.hash;
-  }
-
-  get hostname() {
-    return this.url.hostname;
-  }
 }
 
 export class LaunchsClient {
