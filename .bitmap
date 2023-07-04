@@ -10,51 +10,28 @@
 
 {
     "envs/next-components-env": {
-        "scope": "",
-        "version": "",
+        "scope": "learnbit-react.rocket-roster",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "next-demo/envs/next-components-env",
-        "config": {
-            "teambit.envs/envs": {
-                "env": "teambit.envs/env"
-            }
-        }
+        "rootDir": "next-demo/envs/next-components-env"
     },
     "modules/launchs-client": {
-        "scope": "",
-        "version": "",
+        "scope": "learnbit-react.rocket-roster",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "next-demo/modules/launchs-client",
-        "config": {
-            "teambit.node/node@0.1.6": {},
-            "teambit.envs/envs": {
-                "env": "teambit.node/node"
-            }
-        }
+        "rootDir": "next-demo/modules/launchs-client"
     },
     "ui/card": {
-        "scope": "",
-        "version": "",
+        "scope": "learnbit-react.rocket-roster",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "next-demo/ui/card",
-        "config": {
-            "learnbit-react.rocket-roster/envs/next-components-env": {},
-            "teambit.envs/envs": {
-                "env": "learnbit-react.rocket-roster/envs/next-components-env"
-            }
-        }
+        "rootDir": "next-demo/ui/card"
     },
     "ui/countdown": {
-        "scope": "",
-        "version": "",
+        "scope": "learnbit-react.rocket-roster",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "next-demo/ui/countdown",
-        "config": {
-            "learnbit-react.rocket-roster/envs/next-components-env": {},
-            "teambit.envs/envs": {
-                "env": "learnbit-react.rocket-roster/envs/next-components-env"
-            }
-        }
+        "rootDir": "next-demo/ui/countdown"
     },
     "$schema-version": "15.0.0"
 }
