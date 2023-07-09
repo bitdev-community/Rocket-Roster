@@ -13,7 +13,6 @@ jobs:
         with:
           node-version: 18
       - run: bash ./install.sh
-      - run: bit install
 
   deploy-vercel:
     needs: build
