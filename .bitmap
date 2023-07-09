@@ -13,7 +13,40 @@
         "scope": "learnbit-react.rocket-roster",
         "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "next-demo/envs/next-components-env"
+        "rootDir": "next-demo/envs/next-components-env",
+        "config": {
+            "teambit.component/deprecation": {
+                "deprecate": true,
+                "newId": {
+                    "name": "envs/react-env",
+                    "scope": "learnbit-react.rocket-roster"
+                }
+            }
+        }
+    },
+    "envs/react-env": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "rocket-roster/envs/react-env",
+        "config": {
+            "teambit.envs/envs": {
+                "env": "teambit.envs/env"
+            },
+            "teambit.dependencies/dependency-resolver": {},
+            "teambit.compositions/compositions": {},
+            "teambit.docs/docs": {},
+            "teambit.preview/preview": {},
+            "teambit.component/dev-files": {},
+            "teambit.pipelines/builder": {},
+            "teambit.component/renaming": {
+                "renamedFrom": {
+                    "scope": "learnbit-react.rocket-roster",
+                    "name": "envs/next-components-env",
+                    "version": "0.0.1"
+                }
+            }
+        }
     },
     "modules/launchs-client": {
         "scope": "learnbit-react.rocket-roster",
