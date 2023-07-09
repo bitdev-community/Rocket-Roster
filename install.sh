@@ -3,7 +3,7 @@ if ! command -v bit &> /dev/null
 then
     echo "Bit is not installed, installing BVM and Bit..."
     npm i -g @teambit/bvm
-    bvm install
+    SHELL=bash bvm install
     echo "Bit is installed!"
     export PATH=$HOME/bin:$PATH
     echo "export PATH=$HOME/bin:$PATH" >> ~/.bashrc
