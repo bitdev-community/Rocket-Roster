@@ -8,9 +8,6 @@ const nextConfig = {
 
     return config;
   },
-  experimental: {
-    serverActions: true,
-  },
   images: {
     domains: [
       'images2.imgbox.com',
