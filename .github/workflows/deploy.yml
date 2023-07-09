@@ -27,7 +27,7 @@ jobs:
       - name: Link Vercel Project
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-        run: vercel link --yes --token $VERCEL_TOKEN --project "rocket-roster"
+        run: vercel link --yes --token $VERCEL_TOKEN --project "rocket-roster" --scope "bitdev"
       - name: Build the app
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
