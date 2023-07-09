@@ -12,6 +12,15 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
+
+      - name: Cache dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
       - run: bash ./install.sh
 
   deploy-vercel:
