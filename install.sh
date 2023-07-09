@@ -4,7 +4,9 @@ then
     echo "Bit is not installed, installing BVM and Bit..."
     npm i -g @teambit/bvm
     bvm install
+    echo "Bit is installed!"
     export PATH=$HOME/bin:$PATH
+    echo "export PATH=$HOME/bin:$PATH" >> ~/.bashrc
 else
     echo "Bit is already installed!"
 fi
