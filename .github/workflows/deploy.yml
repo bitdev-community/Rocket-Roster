@@ -15,6 +15,8 @@ jobs:
 
       - name: Install PNPM
         run: corepack enable && corepack prepare pnpm@latest --activate
+      - name: PNPM Version
+        run: pnpm -v
       - name: Cache dependencies
         uses: actions/cache@v3
         with:
