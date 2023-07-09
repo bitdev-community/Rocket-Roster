@@ -13,3 +13,4 @@ fi
 
 echo "Bit version:"
 bit -v
+bit install
