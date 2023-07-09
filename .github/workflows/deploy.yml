@@ -1,0 +1,40 @@
+name: Deploy to Vercel
+
+on: 
+  - push
+  - workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - run: pnpm setup
+      - run: bash ./install.sh
+      - run: bit install
+
+  deploy-vercel:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Install Vercel CLI
+        run: npm i -g vercel
+      - name: Link Vercel Project
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: echo "rocket-roster" | vercel link --confirm
+      - name: Build the app
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: vercel build --prod
+      - name: Deploy to Vercel
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: vercel --token $VERCEL_TOKEN --prebuilt --prod
